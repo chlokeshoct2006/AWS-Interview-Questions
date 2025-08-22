@@ -1,7 +1,6 @@
 # AWS Interview Questions & Answers
 
- ## ## Q1) **What** **is**
-**AWS?**
+## ## Q1) **What** **is** **AWS?**
 ****Answer:** ** AWS stands for Amazon Web Services. AWS is a platform that
 provides on-demand resources for hosting web services, storage,
 networking, databases and other resources over the internet with a
@@ -19,14 +18,12 @@ key-pairs that contain a public-key and private-key.
 that provides an interface that you can use to store any amount of
 data, at any time, from anywhere in the world. With S3 you pay only
 for what you use and the payment model is pay-as-you-go.
-## ## Q5) **What** **are** **the** **pricing** **models** **for**
-**EC2instances?**
+## ## Q5) **What** **are** **the** **pricing** **models** **for** **EC2instances?**
 ****Answer:** ** The different pricing model for EC2 instances are as below,
 - On-demand - Reserved
 - Spot
 - Scheduled - Dedicated
-## ## Q6) **What** **are** **the** **types** **of** **volumes** **for**
-**EC2** **instances?**
+## ## Q6) **What** **are** **the** **types** **of** **volumes** **for** **EC2** **instances?**
 
 ****Answer:** ** 
 - There are two types of volumes, - Instance store volumes
