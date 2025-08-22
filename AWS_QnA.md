@@ -282,7 +282,7 @@ database.
 - Manual backups which are known as snapshots.
 
 ## ## Q44) **What** **is** **the** **difference** **between** **security** **groups** **and** **network** **access** **control**
-## ## **list?**
+**list?**
 
 ****Answer:** ** 
 Security Groups
