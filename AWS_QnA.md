@@ -25,8 +25,8 @@ for what you use and the payment model is pay-as-you-go.
 - Scheduled - Dedicated
 ## ## Q6) **What** **are** **the** **types** **of** **volumes** **for** **EC2** **instances?**
 
-****Answer:** ** 
-- There are two types of volumes, - Instance store volumes
+****Answer:** ** There are two types of volumes:
+- Instance store volumes
 - EBS – Elastic Block Stores
 
 ## ## Q7) **What** **are** **EBS** **volumes?**
@@ -36,25 +36,25 @@ that you can attach to the instances. With EBS volumes, your data will
 be preserved even when you stop your instances, unlike your instance
 store volumes where the data is deleted when you stop the instances.
 
-## ## Q8) **What** **are** **the** **types** **of** **volumes** **in**
-**EBS?**
+## ## Q8) **What** **are** **the** **types** **of** **volumes** **in** **EBS?**
 
 ****Answer:** ** Following are the types of volumes in EBS,
-- General purpose - Provisioned IOPS - Magnetic
+- General purpose
+- Provisioned IOPS
+- Magnetic
 - Cold HDD
 - Throughput optimized
 
-## ## Q9) **What** **are** **the** **different** **types** **of**
-**instances?**
+## ## Q9) **What** **are** **the** **different** **types** **of** **instances?**
 
 ****Answer:** ** Following are the types of instances,
 - General purpose
-- Computer Optimized - Storage Optimized
+- Computer Optimized
+- Storage Optimized
 - Memory Optimized
 - Accelerated Computing
 
-## ## Q10) **What** **is** **an** **auto-scaling** **and** **what**
-**are** **the** **components?**
+## ## Q10) **What** **is** **an** **auto-scaling** **and** **what** **are** **the** **components?**
 
 ****Answer:** ** Auto scaling allows you to automatically scale-up and scale-down
 the number of instances depending on the CPU utilization or memory
@@ -92,44 +92,44 @@ various AWS resources. Like health check, network, Application, etc.
 monitoring. Basic monitoring is free and detailed monitoring is
 chargeable.
 
-## ## Q16) **What** **are** **the** **cloudwatch** **metrics** **that**
-**are** **available** **for** **EC2** **instances?**
+## ## Q16) **What** **are** **the** **cloudwatch** **metrics** **that** **are** **available** **for** **EC2** **instances?**
 
 ****Answer:** ** Diskreads, Diskwrites, CPU utilization, networkpacketsIn,
 networkpacketsOut, networkIn, networkOut, CPUCreditUsage,
 CPUCreditBalance.
 
-## ## Q17) **What** **is** **the** **minimum** **and** **maximum**
-**size** **of** **individual** **objects** **that** **you** **can**
-**store** **in** **S3** ****Answer:** ** The minimum size of individual objects
+## ## Q17) **What** **is** **the** **minimum** **and** **maximum** **size** **of** **individual** **objects** **that** **you** **can** **store** **in** **S3?** 
+****Answer:** ** The minimum size of individual objects
 that you can store in S3 is 0 bytes and the maximum bytes that you can
 store for individual objects is 5TB.
 
-## ## Q18) **What** **are** **the** **different** **storage** **classes**
-**in** **S3?**
+## ## Q18) **What** **are** **the** **different** **storage** **classes** **in** **S3?**
 
 ****Answer:** ** Following are the types of storage classes in S3,
 - Standard frequently accessed
-- Standard infrequently accessed - One-zone infrequently accessed. -
-Amazon S3 Intelligent-Tiering
-- Amazon S3 Express One Zone - Glacier Instant Retrieval
-- Amazon S3 Glacier Flexible Retrieval - Amazon S3 Glacier Deep
-Archive
-- RRS – reduced redundancy storage
-## ## Q19) **What** **is** **the** **default** **storage** **class**
-**in** **S3?**
+- Standard infrequently accessed
+- One-zone infrequently accessed.
+- Amazon S3 Intelligent-Tiering
+- Amazon S3 Express One Zone
+- Glacier Instant Retrieval
+- Amazon S3 Glacier Flexible Retrieval
+- Amazon S3 Glacier Deep Archive
+- RRS
+– reduced redundancy storage
+## ## Q19) **What** **is** **the** **default** **storage** **class** **in** **S3?**
 
 ****Answer:** ** The default storage class in S3 in Standard frequently accessed.
 ## ## Q20) **What** **is** **glacier?**
 
 ****Answer:** ** Glacier is the back up or archival tool that you use to back up
 your data in S3.
-## ## Q21) **How** **can** **you** **secure** **the** **access** **to**
-**your** **S3** **bucket?**
+## ## Q21) **How** **can** **you** **secure** **the** **access** **to** **your** **S3** **bucket?**
 
 ****Answer:** ** There are two ways that you can control the access to your S3
 buckets,
-- ACL – Access Control List - Bucket polices
+- ACL
+– Access Control List
+- Bucket polices
 ## ## Q22) **How** **can** **you** **encrypt** **data** **in** **S3?**
 
 ****Answer:** ** You can encrypt the data by using the below methods,
@@ -137,73 +137,86 @@ buckets,
 - Server Side Encryption – KMS (Key management Service - Server Side
 Encryption – C (Client Side)
 
-## ## Q23) **What** **are** **the** **parameters** **for** **S3**
-**pricing?**
+## ## Q23) **What** **are** **the** **parameters** **for** **S3** **pricing?**
 
 ****Answer:** ** The pricing model for S3 is as below,
 - Storage used
-- Number of requests you make - Storage management
+- Number of requests you make
+- Storage management
 - Data transfer
 - Transfer acceleration
-## ## Q24) **What** **is** **the** **pre-requisite** **to** **work**
-**with** **Cross** **region** **replication** **in** **S3?**
+## ## Q24) **What** **is** **the** **pre-requisite** **to** **work** **with** **Cross** **region** **replication** **in** **S3?**
+
 ****Answer:** ** You need to enable versioning on both source bucket and
 destination to work with cross region replication. Also both the
 source and destination bucket should be in different region.
 ## ## Q25) **What** **are** **roles?**
+
 ****Answer:** ** Roles are used to provide permissions to entities that you
 trust within your AWS account. Roles are users in another account.
 Roles are similar to users but with roles you do not need to create
 any username and password to work with the resources.
-## ## Q26) **What** **are** **policies** **and** **what** **are**
-**the** **types** **of** **policies?**
+
+## ## Q26) **What** **are** **policies** **and** **what** **are** **the** **types** **of** **policies?**
+
 ****Answer:** ** Policies are permissions that you can attach to the users that
 you create. These policies will contain that access that you have
 provided to the users that you have created. There are 2 types of
 policies.
-- Managed policies - Inline policies
+- Managed policies
+- Inline policies
 ## ## Q27) **What** **is** **cloudfront?**
+
 ****Answer:** ** Cloudfront is an AWS web service that provided businesses and
 application developers an easy and efficient way to distribute their
 content with low latency and high data transfer speeds. Cloudfront is
 content delivery network of AWS.
+
 ## ## Q28) **What** **are** **edge** **locations?**
+
 ****Answer:** ** Edge location is the place where the contents will be cached.
 When a user tries to access some content, the content will be searched
 in the edge location. If it is not available then the content will be
 made available from the origin location and a copy will be stored in
 the edge location.
-## ## Q29) **What** **is** **the** **maximum** **individual**
-**archive** **that** **you** **can** **store** **in** **glacier?**
+
+## ## Q29) **What** **is** **the** **maximum** **individual** **archive** **that** **you** **can** **store** **in** **glacier?**
+
 ****Answer:** ** You can store a maximum individual archive of upto 40 TB.
+
 ## ## Q30) **What** **is** **VPC?**
+
 ****Answer:** ** VPC stands for Virtual Private Cloud. VPC allows you to easily
 customize your networking configuration. VPC is a network that is
 logically isolated from other network in the cloud. It allows
 you to have your own IP address range, subnets, internet gateways, NAT
 gateways and security groups.
+
 ## ## Q31) **What** **is** **VPC** **peering** **connection?**
 
 ****Answer:** ** VPC peering connection allows you to connect 1 VPC with another
 VPC. Instances in these VPC behave as if they are in the same network.
+
 ## ## Q32) **What** **are** **NAT** **gateways?**
 
 ****Answer:** ** NAT stands for Network Address Translation. NAT gateways enables
 instances in a private subnet to connect to the internet but prevent the
 internet from initiating a connection with those instances.
-## ## Q33) **How** **can** **you** **control** **the** **security**
-**to** **your** **VPC?**
+
+## ## Q33) **How** **can** **you** **control** **the** **security** **to** **your** **VPC?**
 
 ****Answer:** ** You can use security groups and NACL (Network Access Control
 List) to control the security to your
 
 VPC.
+
 ## ## Q34) **What** **are** **the** **different** **types** **of**
 **storage** **gateway?**
 
 ****Answer:** ** Following are the types of storage gateway.
 - File gateway
 - Volume gateway - Tape gateway
+
 ## ## Q35) **What** **is** **a** **snowball?**
 
 ****Answer:** ** Snowball is a data transport solution that used source
@@ -211,42 +224,48 @@ appliances to transfer large amounts of data into and out of AWS. Using
 snowball, you can move huge amount of data from one place to another
 which reduces your network costs, long transfer times and also provides
 better security.
-## ## Q36) **What** **are** **the** **database** **types** **in**
-**RDS?**
+
+## ## Q36) **What** **are** **the** **database** **types** **in** **RDS?**
 
 ****Answer:** ** Following are the types of databases in RDS,
-- Aurora - Oracle
-- MYSQL server - Postgresql
+- Aurora
+- Oracle
+- MYSQL server
+- Postgresql
 - MariaDB
 - SQL server
+
 ## ## Q37) **What** **is** **a** **redshift?**
 
 ****Answer:** ** Amazon redshift is a data warehouse product. It is a fast and
 powerful, fully managed, petabyte scale data warehouse service in the
 cloud.
+
 ## ## Q38) **What** **is** **SNS?**
 
 ****Answer:** ** SNS stands for Simple Notification Service. SNS is a web service
 that makes it easy to notifications from the cloud. You can set up SNS
 to receive email notification or message notification.
-## ## Q39) **What** **are** **the** **types** **of** **routing**
-**polices** **in** **route53?**
+
+## ## Q39) **What** **are** **the** **types** **of** **routing** **polices** **in** **route53?**
 
 ****Answer:** ** Following are the types of routing policies in route53,
-- Simple routing - Latency routing - Failover routing
-- Geolocation routing - Weighted routing
+- Simple routing
+- Latency routing
+- Failover routing
+- Geolocation routing
+- Weighted routing
 - Multivalue answer
-## ## Q40) **What** **is** **the** **maximum** **size** **of**
-**messages** **in** **SQS?**
+## ## Q40) **What** **is** **the** **maximum** **size** **of** **messages** **in** **SQS?**
 
 ****Answer:** ** The maximum size of messages in SQS is 256 KB.
 
-## ## Q41) **What** **are** **the** **types** **of** **queues** **in**
-**SQS?**
+## ## Q41) **What** **are** **the** **types** **of** **queues** **in** **SQS?**
 
 ****Answer:** ** There are 2 types of queues in SQS.
 - Standard queue
 - FIFO (First In First Out)
+
 ## ## Q42) **What** **is** **multi-AZ** **RDS?**
 
 ****Answer:** ** Multi-AZ (Availability Zone) RDS allows you to have a replica of
@@ -256,20 +275,18 @@ have an exact copy of your database. So when your primary database goes
 down, your application will automatically failover to the standby
 database.
 
-## ## Q43) **What** **are** **the** **types** **of** **backups** **in**
-**RDS** **database?**
+## ## Q43) **What** **are** **the** **types** **of** **backups** **in** **RDS** **database?**
 
 ****Answer:** ** There are 2 types of backups in RDS database.
 - Automated backups
 - Manual backups which are known as snapshots.
-## ## Q44) **What** **is** **the** **difference** **between**
-**security** **groups** **and** **network** **access** **control**
-**list?**
+
+## ## Q44) **What** **is** **the** **difference** **between** **security** **groups** **and** **network** **access** **control**
+## ## **list?**
 
 ****Answer:** ** 
 Security Groups
-Can control the access at the instance level Can add rules for “allow”
-only
+Can control the access at the instance level Can add rules for “allow” only
 Evaluates all rules before allowing the traffic
 Can assign unlimited number of security groups
 Statefull filtering
@@ -284,30 +301,35 @@ Rules are processed in order number when allowing traffic.
 
 Can assign upto 5 security groups.
 
-Stateless filtering
-## ## Q45) **What** **are** **the** **types** **of** **load**
-**balancers** **in** **EC2?**
+Stateless filtering.
+
+## ## Q45) **What** **are** **the** **types** **of** **load** **balancers** **in** **EC2?**
 
 ****Answer:** ** There are 3 types of load balancers,
-- Application load balancer - Network load balancer
+- Application load balancer
+- Network load balancer
 - Classic load balancer
+
 ## ## Q46) **What** **is** **and** **ELB?**
 
 ****Answer:** ** ELB stands for Elastic Load balancing. ELB automatically
 distributes the incoming application traffic or network traffic across
 multiple targets like EC2, containers, IP addresses.
-## ## Q47) **What** **are** **the** **two** **types** **of** **access**
-**that** **you** **can** **provide** **when** **you** **are**
+
+## ## Q47) **What** **are** **the** **two** **types** **of** **access** **that** **you** **can** **provide** **when** **you** **are**
 **creating** **users?**
 
 ****Answer:** ** Following are the two types of access that you can create.
-- Programmatic access - Console access
+- Programmatic access
+- Console access
+
 ## ## Q48) **What** **are** **the** **benefits** **of** **auto**
 **scaling?**
 
 ****Answer:** ** Following are the benefits of auto scaling
 - Better fault tolerance - Better availability
 - Better cost management
+
 ## ## Q49) **What** **are** **security** **groups?**
 
 ****Answer:** ** Security groups acts as a firewall that contains the traffic for
@@ -322,8 +344,8 @@ associated with the security group
 
 ****Answer:** ** Shared AMI’s are the AMI that are created by other developed and
 made available for other developed to use.
-## ## Q51)What** **is** **the** **difference** **between** **the**
-**classic** **load** **balancer** **and** **application** **load**
+
+## ## Q51)What** **is** **the** **difference** **between** **the** **classic** **load** **balancer** **and** **application** **load**
 **balancer?**
 
 ****Answer:** ** Dynamic port mapping, multiple port multiple listeners is used
